@@ -57,16 +57,19 @@ const Portfolio: React.FC = () => (
         <h2 className="text-xl text-cyan-400 font-bold mb-2">Project Showcase</h2>
         <div className="space-y-3">
             <div>
-                <h3 className="font-bold text-yellow-400">Project Alpha - Corporate Rebranding</h3>
-                <p>A complete visual overhaul for a tech startup, including a new logo, brand guidelines, and a WordPress-powered marketing site. Resulted in a 40% increase in user engagement.</p>
+                <h3 className="font-bold text-yellow-400">Idle Card Collector</h3>
+                <p><a href="https://147cards.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-green-400 underline">https://147cards.netlify.app/</a></p>
+                <p>A digital trading card game platform featuring custom card design and online multiplayer capabilities.</p>
             </div>
             <div>
-                <h3 className="font-bold text-yellow-400">Project Beta - E-commerce Platform</h3>
-                <p>Designed and developed a custom WooCommerce theme for a boutique fashion retailer, focusing on a mobile-first, visually rich shopping experience.</p>
+                <h3 className="font-bold text-yellow-400">Clarkes Cleaning</h3>
+                <p><a href="https://clarkescleaning.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-green-400 underline">https://clarkescleaning.netlify.app/</a></p>
+                <p>A professional cleaning service website with booking system and service management features.</p>
             </div>
             <div>
-                <h3 className="font-bold text-yellow-400">Project Gamma - Digital Art Series</h3>
-                <p>A personal project consisting of a series of intricate illustrations created in Photoshop and Illustrator, showcased on a minimalist portfolio website.</p>
+                <h3 className="font-bold text-yellow-400">147 Studio</h3>
+                <p><a href="https://147.studio/" target="_blank" rel="noopener noreferrer" className="text-green-400 underline">https://147.studio/</a></p>
+                <p>A creative studio showcase platform displaying design projects and client work.</p>
             </div>
         </div>
     </div>
