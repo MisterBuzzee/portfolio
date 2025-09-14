@@ -2,8 +2,9 @@
 import React from 'react';
 
 const WelcomeBanner: React.FC = () => (
-  <div className="text-green-400">
-    <pre className="whitespace-pre-wrap font-mono">
+  <div>
+    <div className="text-green-400 hidden sm:block">
+      <pre className="whitespace-pre-wrap font-mono">
 {`
  ▄▀▀▄ ▄▀▄  ▄▀▀▄▀▀▀▄  ▄▀▀█▄▄   ▄▀▀▀▀▄   
 █  █ ▀  █ █   █   █ ▐ ▄▀   █ █     ▄▀  
@@ -13,9 +14,15 @@ const WelcomeBanner: React.FC = () => (
 █    █    ▐     ▐   █    ▐          ▐  
 ▐    ▐              ▐                                                                                                                      
 `}
-    </pre>
-    <p>Welcome to MRBZ's Interactive Portfolio Terminal.</p>
-    <p>Type <span className="text-yellow-400">'help'</span> to see a list of available commands.</p>
+      </pre>
+      <p>Welcome to MRBZ's Interactive Portfolio Terminal.</p>
+      <p>Type <span className="text-yellow-400">'help'</span> to see a list of available commands.</p>
+    </div>
+    <div className="text-green-400 sm:hidden">
+      <h1 className="text-2xl font-bold mb-2">MRBZ PORTFOLIO</h1>
+      <p>Welcome to MRBZ's Interactive Portfolio Terminal.</p>
+      <p>Type <span className="text-yellow-400">'help'</span> to see a list of available commands.</p>
+    </div>
   </div>
 );
 
