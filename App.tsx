@@ -5,13 +5,13 @@ import { getCommandOutput, initialHistory } from './utils/commandProcessor';
 
 // Component: Header for the terminal window
 const TerminalHeader: React.FC = () => (
-  <div className="bg-gray-700 p-2 rounded-t-lg flex items-center">
+  <div className="bg-gray-800 p-2 rounded-t-lg flex items-center border-b border-gray-700">
     <div className="flex space-x-2">
       <div className="w-3 h-3 bg-red-500 rounded-full"></div>
       <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
       <div className="w-3 h-3 bg-green-500 rounded-full"></div>
     </div>
-    <div className="flex-grow text-center text-gray-300 text-sm">
+    <div className="flex-grow text-center text-gray-400 text-sm">
       MRBZ -- portfolio
     </div>
   </div>
@@ -111,12 +111,12 @@ const App: React.FC = () => {
 
     return (
         <div 
-            className="min-h-screen text-white p-4 sm:p-8 flex items-center justify-center font-mono"
+            className="min-h-screen text-white p-4 sm:p-8 flex items-center justify-center font-mono bg-gray-900"
             onClick={focusInput}
         >
-            <div className="w-full max-w-4xl h-[80vh] bg-gray-800 bg-opacity-80 backdrop-blur-sm shadow-2xl rounded-lg flex flex-col">
+            <div className="w-full max-w-4xl h-[80vh] bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-2xl rounded-lg flex flex-col border border-gray-700">
                 <TerminalHeader />
-                <div className="flex-1 p-4 overflow-y-auto">
+                <div className="flex-1 p-4 overflow-y-auto bg-gray-900">
                     {history.map((item, index) => (
                         <HistoryDisplay key={index} item={item} />
                     ))}
